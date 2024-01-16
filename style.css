@@ -1,0 +1,33 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+}
+
+.dashboard {
+    grid-row: 1 / 3;
+}
+
+
