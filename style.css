@@ -14,6 +14,10 @@
   'opsz' 24
 }
 
+:root {
+  --blue-background: #3b82f6;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -30,7 +34,7 @@ body {
 /*           Dashboard Start                 */
 
 .dashboard {
-  background-color: #0ea5e9;
+  background-color: var(--blue-background);
   color: white;
   grid-row: 1 / 3;
   display: flex;
@@ -100,7 +104,7 @@ body {
   margin-left: 20px;
   border-radius: 10px;
   border: none;
-  background: rgb(0 0 0 / 8%);
+  background: #1a49481f
 }
 
 .user-options {
@@ -171,7 +175,64 @@ body {
 .user-buttons > a{
   text-decoration: none;
   color: white;
-  background-color: #0ea5e9;
-  
+  background-color: var(--blue-background);
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 10px;
+  font-weight: 700;
+}
+
+/*             Main Content Start                */
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  background: #1a49481f;
+  box-shadow: inset 0 12px 8px -12px rgba(0, 0, 0, 0.5);
+}
+
+.user-projects {
+  grid-row: 1 / 3;
+}
+
+.user-projects h3 {
+  margin: 30px;
+  margin-bottom: 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+}
+
+.cards {
+  padding: 10px 20px;
+  margin: 10px 10px 20px 30px;
+  border-left: 9px solid #deb502;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 7px 1px #80808078;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-body {
+  font-weight: 100;
+}
+
+.cards .icons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.cards .icons:hover {
+  cursor: pointer;
+}
+
+.cards img {
+  width: 25px;
 }
 
