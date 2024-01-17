@@ -76,3 +76,102 @@ body {
   font-weight: 700;
 }
 
+/*             Header Start                 */
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar-container {
+    display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+#search-bar {
+  min-width: 650px;
+  height: 23px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(0 0 0 / 8%);
+}
+
+.user-options {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.user-options > * {
+  margin: 0 12px;
+}
+
+.user-options img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.user-options a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.user-options p {
+  flex-shrink: 0;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.bottom-header img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 10px 25px;
+}
+
+.profile {
+  display: flex;
+}
+
+.hi-user {
+  line-height: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.hi-user .greetings {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hi-user .username {
+  font-size: large;
+  font-weight: 700;
+}
+
+.user-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.user-buttons > a{
+  text-decoration: none;
+  color: white;
+  background-color: #0ea5e9;
+  
+}
+
